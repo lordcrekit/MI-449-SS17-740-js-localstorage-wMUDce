@@ -1,0 +1,11 @@
+{
+  "name": "MI-449-SS17-740-js-localstorage-wMUDce",
+  "repository": "lordcrekit/MI-449-SS17-740-js-localstorage-wMUDce",
+  "license": "GPL-3.0+",
+  "scripts": {
+    "test": "stylelint sauce/_vars.scss sauce/style.scss --config .stylelint",
+    "clean": "rm -rf comperiled",
+    "makecss": "npm run clean && node-sass sauce/style.scss --output comperiled/css --output-style=compressed --source-map=true",
+    "watchcss": "npm run makecss && node-sass --watch sauce/style.scss --output comperiled/css --output-style=compressed"
+  }
+}
