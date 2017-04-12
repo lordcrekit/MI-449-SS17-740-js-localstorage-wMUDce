@@ -4,12 +4,11 @@ for (var i = 0; i < eles.length; i++) {
   watchPolicy(eles[i])
 }
 
-function watchPolicy(element) {
+function watchPolicy (element) {
   setInterval(function () {
     element.textContent = fetchPolicy()
-  }, Math.random()*1500+1000)
+  }, Math.random() * 1500 + 1000)
 }
-
 
 var policies = [
   'Any negative polls are fake news',
@@ -22,6 +21,6 @@ var policies = [
 /**
  * Carefully determine the current Whitehouse policy on the issue
  */
-function fetchPolicy() {
+function fetchPolicy () {
   return policies[Math.floor(Math.random() * policies.length)]
 }
