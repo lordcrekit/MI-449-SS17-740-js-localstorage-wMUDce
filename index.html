@@ -10,12 +10,30 @@
     <nav>
       <input id="trumpButton" onclick="TrumpOnLightingPolicy()" type="button" value="Join the dark side!"/>
       <label>Times Trumped on lighting policy: <em id="trumpCount"></em></label>
-      <label>Times visited: <em id="visitCount"</em></label>
+      <label>Times visited: <em id="visitCount"></em></label>
     </nav>
-    <h1>The Policy Page</h1>
+    <article>
+      <header><h1>The Policy Page</h1></header>
+    <p>Bringing you the most up to date white house stance on policy.</p>
+    <section>
+      <header><h2>Welfare & Economics</h2></header>
+      <ul>
+        <li>Healthcare plan: <em class="policy">Loading...</em></li>
+        <li>Tax overhaul: <em class="policy">Loading...</em></li>
+      </ul>
+    </section>
+    <section>
+      <header><h2>Foreign policy</h2></header>
+      <ul>
+        <li>Russian relations: <em class="policy">Loading...</em></li>
+        <li>Syrian intervention: <em class="policy">Loading...</em></li>
+      </ul>
+    </section>
+    </article>
 
     <!-- Scripts xD -->
     <script src="./asserts/visitCount.js"></script>
+    <script src="./asserts/policy.js"></script>
     <script src="./asserts/lightdark.js"></script>
     <script>SetTheMood()</script>
   </body>
