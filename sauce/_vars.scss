@@ -1,7 +1,7 @@
 $primary-day: #B0DAF1;
-$seconday-day: #8D91C7;
-$tertiary-day: #6E75A8;
+$secondary-day: #BF7293;
+$tertiary-day: #4AB272;
 
-$primary-night: #3E1929;
-$seconday-night: #47152B;
-$tertiary-night: #2D0416;
+$primary-night: darken(saturate($primary-day, 20), 70);
+$secondary-night: darken(saturate($secondary-day, 20), 30);
+$tertiary-night: darken(saturate($tertiary-day, 20), 30);

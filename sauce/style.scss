@@ -1,20 +1,54 @@
 @import './_vars';
 
+nav {
+  label {
+    margin-left: 4px;
+  }
+}
+
 .day-theme {
   color: invert($primary-day);
   background: $primary-day;
 
-  input {
+  nav {
+    input {
+      color: invert($tertiary-day);
+      background: $tertiary-day;
+      &:hover {
+        background: lighten($tertiary-day, 10);
+      }
+    }
+    label {
+      color: invert($tertiary-day);
+      background: $tertiary-day;
+    }
+  }
+
+  h1 {
     color: invert($secondary-day);
     background: $secondary-day;
   }
 }
 
 .night-theme {
-  color: $primary-night;
-  background: invert($primary-night);
+  color: invert($primary-night);
+  background: $primary-night;
 
-  input {
+  nav { 
+    input {
+      color: invert($tertiary-night);
+      background: $tertiary-night;
+      &:hover {
+        background: lighten($tertiary-night, 10);
+      }
+    }
+    label {
+      color: invert($tertiary-night);
+      background: $tertiary-night;
+    }
+  }
+
+  h1 {
     color: invert($secondary-night);
     background: $secondary-night;
   }
