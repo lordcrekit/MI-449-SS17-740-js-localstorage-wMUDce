@@ -6,6 +6,11 @@ function SetTheMood() {
   document.getElementsByTagName('BODY')[0].className = dark
     ? 'night-theme'
     : 'day-theme'
+  document.getElementById('trumpButton').value = dark
+    ? 'Come to the light!'
+    : 'Join the dark side!'
+  var count = parseInt(window.localStorage.getItem('trumpCount')) || 0
+  document.getElementById('trumpCount').textContent = count;
 }
 
 /**
@@ -14,5 +19,7 @@ function SetTheMood() {
  */
 function TrumpOnLightingPolicy() {
   window.localStorage.setItem('dark', window.localStorage.getItem('dark') !== 'true')
+  window.localStorage.setItem('trumpCount',
+      (parseInt(window.localStorage.getItem('trumpCount')) || 0) + 1)
   SetTheMood()
 }
