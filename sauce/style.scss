@@ -1,0 +1,21 @@
+@import './_vars';
+
+.day-theme {
+  color: invert($primary-day);
+  background: $primary-day;
+
+  input {
+    color: invert($secondary-day);
+    background: $secondary-day;
+  }
+}
+
+.night-theme {
+  color: $primary-night;
+  background: invert($primary-night);
+
+  input {
+    color: invert($secondary-night);
+    background: $secondary-night;
+  }
+}
